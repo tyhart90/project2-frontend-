@@ -1,1 +1,48 @@
+/* =============================
+    ~ BASE ELEMENT STYLES ~
+================================ */
 
+* {
+  box-sizing: border-box;
+  border: red; 
+}
+
+.container {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+
+/* ==============================
+      ~  BASE LAYOUT STYLES ~
+================================= */
+
+
+
+
+
+
+/* =============================
+      ~  MEDIA QUERIES ~
+================================ */
+
+
+@@media (min-width: 769px) {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .name {
+    float: left;
+  }
+
+  .main-nav {
+    float: right;
+  }
+
+  .main-nav li {
+    display: inline-block;
+    margin-left: 15px;
+  }
+}
