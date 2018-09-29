@@ -1,19 +1,82 @@
 /* =============================
     ~ BASE ELEMENT STYLES ~
 ================================ */
+* {
+  box-sizing: border-box;
+}
+
+
+~~~~~~~~~~~/* START Styles of nav menu*/~~~~~~~~~~
+
+.name {
+	font-size: 1.25em;
+}
+
+nav {
+  content: normal;
+}
+
+.name,
+.main-nav li {
+  font-family: 'Roboto Condensed', sans-serif;
+  text-align: center;
+  list-style-type: none;
+    /*margin: 0;
+    padding: 0;*/
+	text-align: center;
+  background-color: rgba(255, 255, 255, 0.7);
+	margin-top: 6px;
+	margin-bottom: 6px;
+}
+
+.main-nav a {
+	font-size: .95em;
+	color: #f47f44;
+	text-transform: uppercase;
+}
+
+.main-nav a:hover {
+	color: #ddb71f;
+  font-weight: bold;
+  text-decoration: overline;
+}
+.name a,
+.main-nav a {
+	padding: 10px 15px;
+	display: block;
+}
+
+.main-header p {
+  color: black;
+  text-shadow: white 1px 1px 15px;
+  font-weight: bolder;
+
+}
+~~~~~~~~~~~/* END Styles of nav menu*/~~~~~~~~~~
+
+
+
+
 p {
   font-family: 'Roboto Condensed', sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Fjalla One', sans-serif;
+
 }
 
 h4 {
   font-family: 'Fjalla One', sans-serif;
+  text-align: center;
 }
+
 
 h5 {
   font-family: 'Fjalla One', sans-serif;
+  text-align: center;
 }
-
-
 
 
 img {
@@ -26,10 +89,37 @@ img {
       ~  BASE LAYOUT STYLES ~
 ================================= */
 
+.container {
+ padding-left: 1em;
+ padding-right: 1em;
+}
 
+.main-header {
+  text-align: center;
+  padding: 5px;
+  background-image: url(../images/brickbackground.jpg);
+  background-color: rgba(199, 199, 199, 0.85);
+  background-blend-mode: lighten;
+  background-repeat: no-repeat;
+  background-position: relative;
+  background-size: cover;
+  box-sizing: border-box;
+}
 
+.main-footer {
+  text-align: center;
 
-
+}
 /* =============================
       ~  MEDIA QUERIES ~
 ================================ */
+
+
+
+@media (min-width: 768px) {
+  .container{
+    width: 70%;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+}
