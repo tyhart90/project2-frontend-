@@ -1,12 +1,25 @@
 /* =============================
     ~ BASE ELEMENT STYLES ~
 ================================ */
-
-* {
-  box-sizing: border-box;
-  border-color: red;
+p {
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
+h4 {
+  font-family: 'Fjalla One', sans-serif;
+}
+
+h5 {
+  font-family: 'Fjalla One', sans-serif;
+}
+
+
+
+
+img {
+  display: inline-block;
+  width: 100%;
+}
 
 
 /* ==============================
@@ -15,35 +28,8 @@
 
 
 
-.container {
-  padding-left: 1em;
-  padding-right: 1em;
-}
-
 
 
 /* =============================
       ~  MEDIA QUERIES ~
 ================================ */
-
-
-@media (min-width: 769px) {
-  .container {
-    width: 70%;
-    max-width: 1000px;
-    margin: 0 auto;
-  }
-
-  .name {
-    float: left;
-  }
-
-  .main-nav {
-    float: right;
-  }
-
-  .main-nav li {
-    display: inline-block;
-    margin-left: 15px;
-  }
-}
