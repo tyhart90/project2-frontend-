@@ -4,18 +4,26 @@
 
 
 * {
+  margin: 5px 5px;
   box-sizing: border-box;
+  text-align: center;
 }
 
-
+.primary-content {
+  background-color: #dedfe0;
+  padding-right: 10px;
+}
 ~~~~~~~~~~~/* START Styles of nav menu*/~~~~~~~~~~
 
 .name {
 	font-size: 1.25em;
+  padding-bottom: 20px;
 }
 
 nav {
   content: normal;
+  padding-top: 20px;
+  padding-right: 25px;
 }
 
 .name,
@@ -27,12 +35,14 @@ nav {
     padding: 0;
 	text-align: center;
   background-color: rgba(255, 255, 255, 0.4);
-	margin-top: 6px;
-	margin-bottom: 6px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  margin-right: 2px;
+  margin-left: 2px;
 }
 
 .main-nav a {
-	font-size: .95em;
+	/*font-size: .95em;*/
 	color: #f47f44;
 	text-transform: uppercase;
 }
@@ -54,26 +64,68 @@ nav {
   font-weight: bolder;
   padding-top: 10px;
   padding-bottom: 30px;
+  margin-bottom: -10px;
 
 }
 ~~~~~~~~~~~/* END Styles of nav menu*/~~~~~~~~~~
 
+.portfolio {
+
+  padding-top: 60px;
+  margin: -50px;
+}
+
+
+.skills li {
+  padding-right: 11px;
+  margin-right: 25px;
+  font-family: 'Roboto Condensed', sans-serif;
+   list-style-type: none;
+}
+
+.skills li:nth-child(odd) {
+  background-color: #bdf6e9;
+}
+
+.skills {
+  padding-bottom: 30px;
+  margin-bottom: 50px;
+}
+
+.contact {
+  margin-bottom: 50px;
+}
+
+.contact p {
+  padding-bottom: 18px;
+}
+
+.contact h5 {
+  padding-bottom: 30px;
+}
 
 
 
 p {
   font-family: 'Roboto Condensed', sans-serif;
   text-align: center;
+  padding-bottom: 14px;
 }
 
 h1 {
   font-family: 'Fjalla One', sans-serif;
-
+  padding-bottom: 20px;
 }
+
+h3 {
+  font-family: 'Fjalla One', sans-serif;
+}
+
 
 h4 {
   font-family: 'Fjalla One', sans-serif;
   text-align: center;
+  padding-bottom: 20px;
 }
 
 
@@ -108,21 +160,47 @@ img {
   background-position: relative;
   background-size: cover;
   box-sizing: border-box;
-  margin-bottom: 80px;
+  margin-bottom: -1px;
+
 }
 
-.main-footer {
-  background-color: grey;
-  font-family: 'Fjalla One', sans-serif;
-  text-align: center;
 
+.portfolio {
+  margin-bottom: 50px;
+  padding-top: 30px;
+}
+
+
+~~~~~~~~~~~/* START Styles of FOOTER*/~~~~~~~~~~
+
+.main-footer {
+   border-top-style: solid;
+
+}
+
+
+.main-footer {
+
+  font-family: 'Fjalla One', sans-serif;
+  border-top-style: solid;
+  border-top-color: #dedfe0;
+  border-top-width: 1px;
+  padding-bottom: 7px;
 }
 
 .main-footer h5 {
+  margin: auto;
+  font-size: 17px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  padding-left: 10px;
   float: left;
 }
 .main-footer a {
+  padding-top: 0px;
+  padding-bottom: 10px;
   float: right;
+  font-family: 'Fjalla One', sans-serif;
 
 }
 /* =============================
