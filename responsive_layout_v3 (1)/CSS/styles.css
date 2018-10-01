@@ -369,9 +369,128 @@ img {
 @media (min-width: 1024px) {
 
   .container {
-    width: 80%;
-    max-width: 1150px;
+    width: 90%;
   }
+
+  .main-header {
+    width: 98%;
+    display: inline-block;
+  }
+  .name {
+    float: left;
+    margin-top: 6px;
+    padding: 10px;
+
+  }
+
+  .main-nav li {
+    display: inline-block;
+    text-align: inherit;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    margin-right: 1em;
+    float: right;
+  }
+
+  .profile-picture {
+    display: block;
+    width: 70%;
+    margin-top: 1.3em;
+    margin-right: 3.5em;
+    margin-bottom: 3.5em;
+    clear: both;
+
+  }
+
+  .profile-info {
+    font-size: 1.3em;
+    margin-top: 1em;
+    padding-top: 1em;
+    width: 600px;
+  }
+
+  .right-column {
+    float: right;
+    width: 54%;
+    margin-top: 1em;
+  }
+
+  .left-column {
+    float: left;
+    width: 42%;
+  }
+
+  .left-column p {
+    padding: 0;
+  }
+
+  .container p {
+    font-size: 1em;
+    text-align: left;
+    margin-left: 2em;
+    font-size: 1.1em;
+    margin-top: 0.8em;
+  }
+
+    .portfolio {
+      margin-bottom: 20px;
+    }
+
+    .primary-content {
+        font-size: 1em;
+        width: 99%;
+        margin: auto 0;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 25px;
+        padding-bottom: 40px;
+      }
+
+    .primary-content p {
+      font-size: 1em;
+      padding: 9px;
+    }
+
+  .col {
+      float: left;
+      width: 31.8%;
+    }
+    .skills {
+    margin-top: 70px;
+    font-size: 1em;
+    }
+
+    .skills h4 {
+      font-size: 2em;
+
+    }
+
+    .skills img {
+      width: 850px;
+      height: 500px;
+    }
+
+    .skills li {
+      font-size: 1.5em;
+      padding-left: 100px;
+      padding-right: 100px;
+      margin-left: 200px;
+      margin-right: 200px;
+    }
+
+
+
+
+.contact h5 {
+  font-size: 1em;
+}
+
+.contact p {
+  font-size: 1em;
+  padding: -50px;
+
+}
+
 
   .footer-nav {
     font-family: 'Fjalla One', sans-serif;
@@ -381,19 +500,19 @@ img {
     padding-bottom: 7px;
     display: inline-block;
     float: right;
-    list-style-type: none;
-  }
+    width: 100%;
 
+  }
   .footer-nav h5 {
-    font-size: 17px;
+    font-size: 1em;
     padding-top: 30px;
-    padding-bottom: 0px;
+    padding-bottom: 20px;
     padding-left: 10px;
     float: left;
 }
 
-.footer-nav a {
-
+.footer-nav li {
+  list-style-type: none;
   margin: auto;
   font-size: 17px;
   padding-top: 30px;
@@ -402,13 +521,17 @@ img {
   float: right;
 }
 
+
   .small-footer {
     display: none;
   }
 
   .clearfix::after {
-		content: " ";
-		display: table;
-		clear: both;
-}
+    content: " ";
+    display: table;
+    clear: both;
+  }
+
+
+
 }
