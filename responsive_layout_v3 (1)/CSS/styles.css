@@ -365,7 +365,7 @@ img {
     display: table;
     clear: both;
   }
-
+}
 @media (min-width: 1024px) {
 
   .container {
@@ -394,7 +394,7 @@ img {
 
   .profile-picture {
     display: block;
-    width: 70%;
+    width: 65%;
     margin-top: 1.3em;
     margin-right: 3.5em;
     margin-bottom: 3.5em;
@@ -403,26 +403,26 @@ img {
   }
 
   .profile-info {
+    display: block;
+    font-weight: 300;
     font-size: 1.3em;
     margin-top: 1em;
     padding-top: 1em;
-    width: 600px;
+    width: 110%;
   }
 
   .right-column {
     float: right;
-    width: 54%;
+    width: 55%;
     margin-top: 1em;
   }
 
   .left-column {
     float: left;
-    width: 42%;
+    width: 41%;
   }
 
-  .left-column p {
-    padding: 0;
-  }
+
 
   .container p {
     font-size: 1em;
@@ -442,8 +442,7 @@ img {
         margin: auto 0;
         margin-left: auto;
         margin-right: auto;
-        padding-left: 25px;
-        padding-bottom: 40px;
+        padding: 0;
       }
 
     .primary-content p {
@@ -453,7 +452,7 @@ img {
 
   .col {
       float: left;
-      width: 31.8%;
+      width: 31.5%;
     }
     .skills {
     margin-top: 70px;
