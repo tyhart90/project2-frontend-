@@ -68,11 +68,16 @@ nav {
 
 }
 ~~~~~~~~~~~/* END Styles of nav menu*/~~~~~~~~~~
-
+.profile-picture {
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 60%;
+}
 .portfolio {
-
   padding-top: 60px;
-  margin: -50px;
+  padding-bottom: 25px;
+  margin: 5px;
 }
 
 
@@ -88,7 +93,14 @@ nav {
 }
 
 .skills {
+  border-top-width: 2px;
+  border-top-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-color: #dedfe0;
+  padding-top: 20px;
   padding-bottom: 30px;
+  margin-top: 20px;
   margin-bottom: 50px;
 }
 
@@ -97,7 +109,7 @@ nav {
 }
 
 .contact p {
-  padding-bottom: 18px;
+  padding-bottom: 20px;
 }
 
 .contact h5 {
@@ -150,6 +162,7 @@ img {
  padding-right: 1em;
 }
 
+
 .main-header {
   text-align: center;
   padding: 5px;
@@ -173,13 +186,13 @@ img {
 
 ~~~~~~~~~~~/* START Styles of FOOTER*/~~~~~~~~~~
 
-.main-footer {
+.small-footer {
    border-top-style: solid;
 
 }
 
 
-.main-footer {
+.small-footer {
 
   font-family: 'Fjalla One', sans-serif;
   border-top-style: solid;
@@ -188,7 +201,7 @@ img {
   padding-bottom: 7px;
 }
 
-.main-footer h5 {
+.small-footer h5 {
   margin: auto;
   font-size: 17px;
   padding-top: 30px;
@@ -196,24 +209,206 @@ img {
   padding-left: 10px;
   float: left;
 }
-.main-footer a {
+.small-footer a {
   padding-top: 0px;
   padding-bottom: 10px;
   float: right;
   font-family: 'Fjalla One', sans-serif;
 
 }
+
+
+.footer-nav {
+  display: none;
+}
+
+.clearfix::after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+
 /* =============================
       ~  MEDIA QUERIES ~
 ================================ */
 
 
-/*
 @media (min-width: 768px) {
-  .container{
-    width: 70%;
-    max-width: 1000px;
+
+  .container {
+    width: 100%;
     margin: 0 auto;
+    display: inline-block;
+
   }
+
+  .main-header {
+    width: 100%;
+    display: inline-block;
+  }
+
+  .profile-picture {
+    display: block;
+    width: 100%;
+    margin-top: .3em;
+    margin-right: 1em;
+    margin-bottom: 3em;
+    float: right;
+    clear: both;
+
+  }
+
+  .profile-info {
+    font-size: 1.2em;
+    margin-top: .3em;
+    margin-right: 1em;
+    margin-bottom: 3em;
+    width: 100%;
+    float: left;
+    clear: both;
+    display: inline-block;
+
+  }
+
+
+
+  .main-nav li {
+    display: inline-block;
+    margin-left: 8px;
+    margin-bottom: 10px;
+  }
+
+  .right-column {
+    float: right;
+    width: 48%;
+    margin-top: 1em;
+  }
+
+  .left-column {
+    float: left;
+    width: 47%;
+    margin-top: 1em;
+    padding-right: 10px;
+    margin-right: 11px;
+  }
+
+  .left-column p {
+    padding: 0;
+  }
+
+  .container p {
+    text-align: left;
+    margin-left: 2em;
+    font-size: 1.1em;
+    margin-top: 0.8em;
+  }
+
+  .primary-content {
+      width: 100%;
+      margin: auto 0;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 0;
+    }
+
+    .portfolio {
+      margin-bottom: 20px;
+    }
+
+    .primary-content p {
+      padding: 9px;
+    }
+
+  .col {
+      float: left;
+      width: 48%;
+    }
+
+  .footer-nav {
+    font-family: 'Fjalla One', sans-serif;
+    border-top-style: solid;
+    border-top-color: #dedfe0;
+    border-top-width: 1px;
+    padding-bottom: 7px;
+    display: inline-block;
+    float: right;
+    width: 100%;
+
+  }
+  .footer-nav h5 {
+    font-size: 1em;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    float: left;
 }
-*/
+
+.footer-nav li {
+  flex-direction: row-reverse;
+  list-style-type: none;
+  margin: auto;
+  font-size: 17px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  float: right;
+}
+
+
+  .small-footer {
+    display: none;
+  }
+
+  .clearfix::after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+
+@media (min-width: 1024px) {
+
+  .container {
+    width: 80%;
+    max-width: 1150px;
+  }
+
+  .footer-nav {
+    font-family: 'Fjalla One', sans-serif;
+    border-top-style: solid;
+    border-top-color: #dedfe0;
+    border-top-width: 1px;
+    padding-bottom: 7px;
+    display: inline-block;
+    float: right;
+    list-style-type: none;
+  }
+
+  .footer-nav h5 {
+    font-size: 17px;
+    padding-top: 30px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+    float: left;
+}
+
+.footer-nav a {
+
+  margin: auto;
+  font-size: 17px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  float: right;
+}
+
+  .small-footer {
+    display: none;
+  }
+
+  .clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+}
+}
