@@ -67,6 +67,8 @@ nav {
 
 }
 ~~~~~~~~~~~/* END Styles of nav menu*/~~~~~~~~~~
+
+
 .profile-picture {
 display: block;
 margin-left: auto;
@@ -115,7 +117,7 @@ width: 60%;
   padding-bottom: 30px;
 }
 
-
+/*~~~~~~~~~~~~~~~FONT STYLES ~~~~~~~~~~~~~~~~~~~~~~~*/
 
 p {
   font-family: 'Roboto Condensed', sans-serif;
@@ -156,12 +158,6 @@ img {
       ~  BASE LAYOUT STYLES ~
 ================================= */
 
-.container {
- padding-left: 1em;
- padding-right: 1em;
-}
-
-
 .main-header {
   text-align: center;
   padding: 5px;
@@ -180,6 +176,12 @@ img {
 .portfolio {
   margin-bottom: 50px;
   padding-top: 30px;
+}
+
+
+.container {
+ padding-left: 1em;
+ padding-right: 1em;
 }
 
 
