@@ -12,17 +12,18 @@
 .primary-content {
   background-color: #dedfe0;
 }
-~~~~~~~~~~~/* START Styles of nav menu*/~~~~~~~~~~
+/* ~~~~~~~~~~~START Styles of nav menu~~~~~~~~~~*/
 
 .name {
-	font-size: 1.25em;
-  padding-bottom: 20px;
+	font-size: 2.25em;
+  padding-bottom: 7px;
 }
 
 nav {
   content: normal;
-  padding-top: 20px;
+  padding-top: 10px;
   padding-right: 25px;
+  padding-bottom: 7px;
 }
 
 .name,
@@ -41,9 +42,8 @@ nav {
 }
 
 .main-nav a {
-	/*font-size: .95em;*/
+	font-size: .95em;
 	color: #f47f44;
-	text-transform: uppercase;
 }
 
 .main-nav a:hover {
@@ -66,15 +66,15 @@ nav {
   margin-bottom: -10px;
 
 }
-~~~~~~~~~~~/* END Styles of nav menu*/~~~~~~~~~~
+/* ~~~~~~~~~~~END Styles of nav menu~~~~~~~~~~*/
 
 
 .profile-picture {
-display: block;
-margin-left: auto;
-margin-right: auto;
-width: 60%;
+  display: block;
+  margin: auto;
+  width: 100%;
 }
+
 .portfolio {
   padding-top: 60px;
   padding-bottom: 25px;
@@ -165,7 +165,6 @@ img {
   background-color: rgba(199, 199, 199, 0.85);
   background-blend-mode: lighten;
   background-repeat: no-repeat;
-  background-position: relative;
   background-size: cover;
   box-sizing: border-box;
   margin-bottom: -1px;
@@ -185,13 +184,11 @@ img {
 }
 
 
-~~~~~~~~~~~/* START Styles of FOOTER*/~~~~~~~~~~
+/* ~~~~~~~~~~~START Styles of FOOTER~~~~~~~~~~*/
 
 .small-footer {
    border-top-style: solid;
-
 }
-
 
 .small-footer {
 
@@ -346,7 +343,6 @@ img {
 }
 
 .footer-nav li {
-  flex-direction: row-reverse;
   list-style-type: none;
   margin: auto;
   font-size: 17px;
@@ -366,11 +362,11 @@ img {
     display: table;
     clear: both;
   }
-
+}
 @media (min-width: 1024px) {
 
   .container {
-    width: 90%;
+    width: 100%;
   }
 
   .main-header {
@@ -379,23 +375,23 @@ img {
   }
   .name {
     float: left;
-    margin-top: 6px;
+    margin-top: 30px;
+    margin-left: 70px;
     padding: 10px;
-
   }
 
-  .main-nav li {
+  .main-nav {
     display: inline-block;
-    text-align: inherit;
-    margin-left: 10px;
-    margin-bottom: 20px;
-    margin-right: 1em;
+    text-align: right;
+    margin: auto;
+    padding-right: 35px;
     float: right;
   }
 
   .profile-picture {
+    padding-left: 30px;
     display: block;
-    width: 65%;
+    width: 80%;
     margin-top: 1.3em;
     margin-right: 3.5em;
     margin-bottom: 3.5em;
@@ -409,22 +405,20 @@ img {
     font-size: 1.3em;
     margin-top: 1em;
     padding-top: 1em;
-    width: auto;
   }
 
   .right-column {
     float: right;
-    width: 54%;
-    margin-top: 1em;
+    width: 50%;
   }
 
   .left-column {
     float: left;
-    width: 43%;
+    width: 47%;
   }
 
   .left-column p {
-    padding: 0;
+    padding: 10px;
   }
 
   .container p {
@@ -440,7 +434,6 @@ img {
     }
 
     .primary-content {
-        font-size: 1em;
         width: 99%;
         margin: auto 0;
         margin-left: auto;
@@ -457,7 +450,7 @@ img {
   .col {
       float: left;
       padding: 10px;
-      width: 32.5%;
+      width: 32%;
     }
     .skills {
     margin-top: 70px;
@@ -480,7 +473,7 @@ img {
       padding-right: 100px;
       margin-left: 200px;
       margin-right: 200px;
-    }
+}
 
 
 
@@ -491,8 +484,6 @@ img {
 
 .contact p {
   font-size: 1em;
-  padding: -50px;
-
 }
 
 
@@ -506,7 +497,8 @@ img {
     float: right;
     width: 100%;
 
-  }
+}
+
   .footer-nav h5 {
     font-size: 1em;
     padding-top: 30px;
@@ -530,12 +522,9 @@ img {
     display: none;
   }
 
-  .clearfix::after {
+.clearfix::after {
     content: " ";
     display: table;
     clear: both;
   }
-
-
-
 }
